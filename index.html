@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0">
+		<title>Coming Soon Page</title>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				font-family: 'Montserrat',sans-serif;
+			}
+
+			body,html{
+				height: 100vh;
+			}
+
+			.container{
+				height: 100vh;
+				width: 100vw;
+				text-align: center;
+				background-color: darkgray;
+				background-image: url('background.compressed.jpeg');
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+
+			.logo{
+				margin-top: 9vh;
+			}
+
+			.heading{
+				color: #FD3267;
+				margin-top: 8vh;
+				font-size: 2.5em;
+				font-weight: bold;
+			}
+
+			.subheading{
+				color: white;
+				font-size: 0.9em;
+				margin-top: 8vh;
+			}
+
+			.countDownClock{
+				display: flex;
+				margin-top: 9vh;
+				justify-content: center;
+			}
+
+			.days,.hours,.minutes,.seconds{
+				flex-basis: 10%;
+			}
+
+			.numericDays,.numericHours,.numericMinutes,.numericSeconds{
+				color: white;
+				font-size: 2.3em;
+				font-weight: bold;
+			}
+
+			.textDays,.textHours,.textMinutes,.textSeconds{
+				color: #FD3267;
+				font-size: 0.5em;
+				margin-top: 0.8vh;
+			}
+
+			.frmEmail{
+				margin-top: 10vh;
+				text-align: center;
+			}
+
+			.txtEmail{
+				background: transparent;
+				border: solid 1px lightgray;
+				padding: 0.8%;
+				width: 25%;
+				font-size: 0.5em;
+				color: lightgray;
+			}
+
+			.btnEmail{
+				background: transparent;
+				border: solid 1px #FD3267;
+				color: #FD3267;
+				padding: 0.8%;
+				font-size: 0.5em;
+			}
+
+			footer{
+				display: flex;
+				color: white;
+				justify-content: center;
+				margin-top: 12vh;
+			}
+
+			footer a{
+				margin: 0 1.2%;
+				font-size: 0.8em;
+			}
+
+			@media screen and (min-width: 426px) and (max-width: 768px){
+				.heading{
+					font-size: 2em;
+				}
+
+				.subheading{
+					color: white;
+					font-size: 0.9em;
+					margin-top: 8vh;
+				}
+				.days,.hours,.minutes,.seconds{
+					flex-basis: 19%;
+				}
+
+				.txtEmail{
+					padding: 0.9%;
+					width: 45%;
+				}
+
+				.btnEmail{
+					padding: 0.9%;
+					font-size: 0.5em;
+				}
+
+				footer{
+					margin-top: 10vh;
+				}
+			}
+
+			@media screen and (min-width: 376px) and (max-width: 425px){
+				.heading{
+					font-size: 1.8em;
+				}
+
+				.subheading{
+					font-size: 0.7em;
+					margin-top: 8vh;
+				}
+
+				.days,.hours,.minutes,.seconds{
+					flex-basis: 23%;
+				}
+
+				.numericDays,.numericHours,.numericMinutes,.numericSeconds{
+					font-size: 1.8em;
+				}
+
+				.txtEmail{
+					padding: 2.3%;
+					width: 75%;
+				}
+
+				.btnEmail{
+					padding: 1.5%;
+					font-size: 0.5em;
+					margin-top: 2vh;
+				}
+				
+				footer{
+					margin-top: 14vh;
+				}
+
+				footer a{
+					margin: 0 3%;
+				}
+			}
+
+			@media screen and (max-width: 375px){
+				.heading{
+					font-size: 1.4em;
+				}
+
+				.subheading{
+					font-size: 0.5em;
+					margin-top: 8vh;
+				}
+
+				.days,.hours,.minutes,.seconds{
+					flex-basis: 25%;
+				}
+
+				.numericDays,.numericHours,.numericMinutes,.numericSeconds{
+					font-size: 1.4em;
+				}
+
+				.txtEmail{
+					padding: 2.5%;
+					width: 90%;
+				}
+
+				.btnEmail{
+					padding: 1.5%;
+					font-size: 0.5em;
+					margin-top: 2vh;
+				}
+				
+				footer{
+					margin-top: 14vh;
+				}
+
+				footer a{
+					margin: 0 1%;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<section class="container">
+			<img src="logo.png" alt="Company Logo" class="logo">
+			<h1 class="heading">COMING SOON!</h1>
+			<h2 class="subheading">BE READY, THERE IS JUST:</h2>
+			
+			<div class="countDownClock">
+				<div class="days">
+					<p class="numericDays">12</p>
+					<p class="textDays">DAYS</p>
+				</div>
+				<div class="hours">
+					<p class="numericHours">07</p>
+					<p class="textHours">HOURS</p>
+				</div>
+				<div class="minutes">
+					<p class="numericMinutes">36</p>
+					<p class="textMinutes">MINUTES</p>
+				</div>
+				<div class="seconds">
+					<p class="numericSeconds">15</p>
+					<p class="textSeconds">SECONDS</p>
+				</div>
+			</div>
+
+			<form method="Post" class="frmEmail">
+				<input type="email" placeholder="YOUR EMAIL" class="txtEmail" required>
+				<input type="submit" value="KEEP ME UPDATED" class="btnEmail">
+			</form>
+
+			<footer>
+				<a><i class="fab fa-facebook-f"></i></a>
+				<a><i class="fab fa-twitter"></i></a>
+				<a><i class="fab fa-dribbble"></i></a>
+				<a><i class="fab fa-google-plus-g"></i></a>
+				<a><i class="fab fa-youtube"></i></a>
+			</footer>
+		</section>
+
+		<script src="countDownTimer.js"></script>
+	</body>
+</html>
